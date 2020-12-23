@@ -9,7 +9,7 @@
         background: var(--animation-background-color);
     }
     100% {
-        background: white;
+        background: var(--body-background-color);
     }
 }
 
@@ -70,5 +70,17 @@
     }
     86% {
         opacity: 0;
+    }
+}
+
+@keyframes starting-welcome {
+    0% {
+        opacity: 0;
+    }
+    72% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

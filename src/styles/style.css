@@ -1,11 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;300;400;600;700&display=swap');
 
 @import "./variables.css";
 @import "./animations.css";
 
-.logo {
+body {
   font-family: 'Spartan', sans-serif;
+  background-color: var(--body-background-color);
+}
+
+.logo {
   font-size: 65px;
+  font-weight: 100;
   color: var(--animation-font-color);
 }
 
@@ -48,4 +53,26 @@
 
 .hidden {
   display: none !important;
+}
+
+.welcome {
+  animation: starting-welcome 6.5s;
+  padding: 0 20px;
+}
+
+.welcome-section {
+  margin: 60px 0;
+}
+
+.welcome-section-header {
+  font-size: 24px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.welcome-paragraph {
+  font-size: 20px;
+  text-align: center;
+  line-height: 29px;
+  margin: 30px 0;
 }
