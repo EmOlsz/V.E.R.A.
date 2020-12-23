@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+@import "./variables.css";
+@import "./animations.css";
+
+.logo {
+  font-family: 'Spartan', sans-serif;
+  font-size: 65px;
+  color: var(--animation-font-color);
+}
+
+.logo .logo-letter {
+  opacity: 0;
+}
+
+.logo .logo-letter:nth-child(1) {
+  animation: starting-logo-1 5s;
+}
+
+.logo .logo-letter:nth-child(2) {
+  animation: starting-logo-2 5s;
+}
+
+.logo .logo-letter:nth-child(3) {
+  animation: starting-logo-3 5s;
+}
+
+.logo .logo-letter:nth-child(4) {
+  animation: starting-logo-4 5s;
+}
+
+.logo .logo-letter-reverse {
+  display: inline-block;
+  transform: rotate(180deg) translateY(14.5px);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: starting-overlay 5s;
+}
+
+.hidden {
+  display: none !important;
+}

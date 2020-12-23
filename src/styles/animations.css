@@ -1,0 +1,74 @@
+@keyframes starting-overlay {
+    0% {
+        background: white;
+    }
+    20% {
+        background: var(--animation-background-color);
+    }
+    80% {
+        background: var(--animation-background-color);
+    }
+    100% {
+        background: white;
+    }
+}
+
+@keyframes starting-logo-1 {
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes starting-logo-2 {
+    22% {
+        opacity: 0;
+    }
+    42% {
+        opacity: 1;
+    }
+    62% {
+        opacity: 1;
+    }
+    82% {
+        opacity: 0;
+    }
+}
+
+@keyframes starting-logo-3 {
+    24% {
+        opacity: 0;
+    }
+    44% {
+        opacity: 1;
+    }
+    64% {
+        opacity: 1;
+    }
+    84% {
+        opacity: 0;
+    }
+}
+
+@keyframes starting-logo-4 {
+    26% {
+        opacity: 0;
+    }
+    46% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    86% {
+        opacity: 0;
+    }
+}
