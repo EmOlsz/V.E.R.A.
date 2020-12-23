@@ -10,10 +10,10 @@
 }
 
 .logo .logo-letter {
-  opacity: 1;
+  opacity: 0;
 }
 
-/* .logo .logo-letter:nth-child(1) {
+.logo .logo-letter:nth-child(1) {
   animation: starting-logo-1 5s;
 }
 
@@ -27,7 +27,7 @@
 
 .logo .logo-letter:nth-child(4) {
   animation: starting-logo-4 5s;
-} */
+}
 
 .logo .logo-letter-reverse {
   display: inline-block;
@@ -43,9 +43,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: starting-overlay 5s; */
+  animation: starting-overlay 5s;
 }
 
-/* .hidden {
+.hidden {
   display: none !important;
-} */
+}
