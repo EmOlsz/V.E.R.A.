@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>V.E.R.A.</div>
+    <div>Testowa zmiana!</div>
   );
 }
 
