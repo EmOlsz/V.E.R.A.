@@ -11,6 +11,8 @@ const Form = () => {
             body: JSON.stringify({ name, description })
         }
 
+        console.log(process.env.API_URL);
+
         fetch(process.env.API_URL, options)
             .then(res => res.json())
             .then(data => console.log(data))
