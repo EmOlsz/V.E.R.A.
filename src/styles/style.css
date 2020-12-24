@@ -129,6 +129,7 @@ body {
   font-family: 'Spartan', sans-serif;
   background: transparent;
   border: 1px solid var(--animation-font-color);
+  border-radius: 0;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
