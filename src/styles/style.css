@@ -59,6 +59,7 @@ body {
 .welcome {
   animation: starting-welcome 6.5s;
   padding: 0 20px;
+  overflow-x: hidden;
 }
 
 .welcome-section {
@@ -115,4 +116,35 @@ body {
 .welcome-icon > svg {
   font-size: 300px;
   fill: var(--animation-font-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.form-name, .form-description {
+  font-family: 'Spartan', sans-serif;
+  background: transparent;
+  border: 1px solid var(--animation-font-color);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form-description {
+  height: 150px;
+  resize: none;
+}
+
+.form-button {
+  font-family: 'Spartan', sans-serif;
+  border: 1px solid var(--animation-font-color);
+  background: var(--animation-font-color-opacity);
+  padding: 10px 25px;
+  margin-left: auto;
 }

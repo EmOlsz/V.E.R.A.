@@ -1,5 +1,6 @@
 :root {
     --animation-background-color: #fac6e5;
     --animation-font-color: #96304c;
+    --animation-font-color-opacity: rgba(150,48,76, .4);
     --body-background-color: #fde8f4;
 }
