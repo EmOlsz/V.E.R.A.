@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
-
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DoneAllIcon from '@material-ui/icons/DoneAll';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 const Welcome = () => {
     const firstSection = useRef(null);
