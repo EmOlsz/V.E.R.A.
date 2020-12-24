@@ -84,3 +84,15 @@
         opacity: 1;
     }
 }
+
+@keyframes icon-welcome {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

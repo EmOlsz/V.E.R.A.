@@ -1,8 +1,17 @@
 import React from 'react';
 
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 const Welcome = () => {
     return (
         <div className="welcome">
+            <div className="welcome-hero">
+                <p className="welcome-hero-header">Innovative parenthood.</p>
+                <p className="welcome-hero-header-last">Now.</p>
+                <div className="welcome-hero-icon">
+                    <ExpandMoreIcon />
+                </div>
+            </div>
             <div className="welcome-section">
                 <p className="welcome-paragraph">You must be wondering why I gathered you all here...</p>
                 <p className="welcome-paragraph">Let me intoduce you to your personal, fully adjustable application, which will hopefully be a handy tool during your new path into parenthood.</p>
