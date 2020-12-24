@@ -12,6 +12,7 @@ const Form = () => {
         }
 
         console.log(process.env.REACT_APP_API_URL);
+        
 
         fetch(process.env.REACT_APP_API_URL, options)
             .then(res => res.json())
