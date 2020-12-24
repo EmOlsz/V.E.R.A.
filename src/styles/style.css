@@ -130,7 +130,6 @@ body {
   background: transparent;
   border: 1px solid var(--animation-font-color);
   border-radius: 0;
-  box-shadow: none !important;
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -149,4 +148,5 @@ body {
   background: var(--animation-font-color-opacity);
   padding: 10px 25px;
   margin-left: auto;
+  margin-bottom: 20px;
 }
