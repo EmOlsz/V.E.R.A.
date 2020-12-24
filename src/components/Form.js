@@ -11,9 +11,6 @@ const Form = () => {
             body: JSON.stringify({ name, description })
         }
 
-        console.log(process.env.REACT_APP_API_URL);
-        
-
         fetch(process.env.REACT_APP_API_URL, options)
             .then(res => res.json())
             .then(data => console.log(data))
@@ -23,8 +20,8 @@ const Form = () => {
     return (
         <div className="welcome">
             <div className="welcome-section">
-                <p className="welcome-paragraph">This is your application. It will change over time, same as you will.</p>
-                <p className="welcome-paragraph">Because of that, feel free to write suggestions you might have regarding future functionalities. </p>
+                <p className="welcome-paragraph">This is your personal application. It will change over time, same as you will.</p>
+                <p className="welcome-paragraph">In V.E.R.<span className="welcome-letter-reverse">V</span>. &reg;, we value opinion of our customers. Feel free to write any ideas that might come into your mind regarding new features of the app.</p>
                 <div className="form">
                     <input
                         className="form-name" 

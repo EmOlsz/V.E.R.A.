@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import ChildFriendlyIcon from '@material-ui/icons/ChildFriendly';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import DoneAllIcon from '@material-ui/icons/DoneAll';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
@@ -17,6 +18,9 @@ const Welcome = () => {
     return (
         <div className="welcome">
             <div className="welcome-section">
+            <div className="welcome-icon">
+                    <ChildFriendlyIcon />
+                </div>
                 <p className="welcome-hero-header">Innovative parenthood.</p>
                 <p className="welcome-hero-header-last">Now.</p>
                 <div className="welcome-hero-icon">
@@ -25,7 +29,8 @@ const Welcome = () => {
             </div>
             <div ref={firstSection} className="welcome-section">
                 <p className="welcome-paragraph">You must be wondering why I gathered you all here...</p>
-                <p className="welcome-paragraph">Let me intoduce you to your brand new, personal and fully adjustable application. A tool which will help you during your new path into parenthood.</p>
+                <p className="welcome-paragraph">Very soon you will enter completely new chapter of your lives. It's going to be exciting, but also challenging.</p>
+                <p className="welcome-paragraph">Let me intoduce you to your brand new, personal and fully adjustable V.E.R.<span className="welcome-letter-reverse">V</span>. &reg; application. A tool, which is tailored to be as helpfull companion as it can be during your new step into parenthood.</p>
                 <p className="welcome-paragraph">Let's take a look over the features.</p>
             </div>
             <div className="welcome-section">

@@ -12,13 +12,13 @@ const Overlay = () => {
     return (
         <div ref={overlayElement} className="overlay">
             <div className="logo">
-            <span className="logo-letter">V.</span>
-            <span className="logo-letter">E.</span>
-            <span className="logo-letter">R.</span>
-            <span className="logo-letter">
-                <span className="logo-letter-reverse">V</span>
-                .
-            </span>
+                <span className="logo-letter">V.</span>
+                <span className="logo-letter">E.</span>
+                <span className="logo-letter">R.</span>
+                <span className="logo-letter">
+                    <span className="logo-letter-reverse">V</span>
+                    .
+                </span>
             </div>
         </div>
     );
