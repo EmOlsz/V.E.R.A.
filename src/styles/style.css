@@ -86,7 +86,7 @@ body {
 
 .welcome-letter-reverse {
   display: inline-block;
-  transform: rotate(180deg) translateY(3.5px);
+  transform: rotate(180deg) translateY(4px);
 }
 
 .welcome-hero-header {
