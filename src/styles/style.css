@@ -62,23 +62,6 @@ body {
 }
 
 .welcome-section {
-  margin: 60px 0;
-}
-
-.welcome-section-header {
-  font-size: 24px;
-  text-align: center;
-  margin: 30px 0;
-}
-
-.welcome-paragraph {
-  font-size: 20px;
-  text-align: center;
-  line-height: 29px;
-  margin: 30px 0;
-}
-
-.welcome-hero {
   position: relative;
   height: 100vh;
   display: flex;
@@ -86,13 +69,28 @@ body {
   justify-content: center;
 }
 
+.welcome-section-header {
+  font-size: 24px;
+  text-align: center;
+  margin: 30px 0;
+  color: var(--animation-font-color);
+}
+
+.welcome-paragraph {
+  font-size: 20px;
+  text-align: center;
+  line-height: 35px;
+  margin: 30px 0;
+}
+
 .welcome-hero-header {
   font-size: 30px;
 }
 
 .welcome-hero-header-last {
-  font-size: 50px;
+  font-size: 60px;
   text-align: right;
+  color: var(--animation-font-color);
 }
 
 .welcome-hero-icon {
@@ -105,4 +103,16 @@ body {
 .welcome-hero-icon > svg {
   font-size: 50px;
   animation: icon-welcome 2s infinite;
+}
+
+.welcome-icon {
+  position: absolute;
+  top: 20px;
+  right: -115px;
+  opacity: .2;
+}
+
+.welcome-icon > svg {
+  font-size: 300px;
+  fill: var(--animation-font-color);
 }
