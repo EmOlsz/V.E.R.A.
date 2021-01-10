@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Dialog from '@material-ui/core/Dialog';
@@ -18,16 +18,7 @@ import './style.css';
 const AddTask = ({ isOpen, onModalClose }) => {
     const [taskDescription, setTaskDescription] = useState('');
     
-    const input = useRef(null);
     const dispatch = useDispatch();
-
-    useEffect(() => {
-        if (isOpen) {
-            setTimeout(() => {
-                input.current.focus();
-            }, 0);
-        }
-    }, [isOpen])
 
     const onTaskSubmit = () => {
         dispatch(tasks.actions.addItem(taskDescription));
@@ -49,8 +40,8 @@ const AddTask = ({ isOpen, onModalClose }) => {
             </AppBar>
             <DialogContent className="add-task-content">
                 <input
-                    ref={input}
                     className="add-task-input"
+                    placeholder="What's on your mind?"
                     value={taskDescription}
                     onChange={e => setTaskDescription(e.target.value)}
                 />

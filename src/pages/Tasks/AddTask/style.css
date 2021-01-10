@@ -10,14 +10,18 @@
 
 .add-task-content {
     background: var(--body-background-color) !important;
+    padding-top: 25px !important;
     padding-right: 16px !important;
     padding-left: 16px !important;
 }
 
 .add-task-input {
-    border: none;
-    background: none;
-    font-size: 22px;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    font-size: 24px !important;
+    color: #666 !important;
 }
 
 .add-task-actions {
