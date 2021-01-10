@@ -1,0 +1,7 @@
+.task {
+    background: var(--body-background-color) !important;
+}
+
+.task-actions {
+    justify-content: flex-end;
+}

@@ -1,0 +1,30 @@
+.quote {
+    height: calc(100vh - 56px);
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.quote-text {
+    font-size: 36px !important;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: right;
+    margin-top: 25px !important;
+}
+
+.quote-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    opacity: .4;
+    background-image: url('assets/images/author.png');
+}

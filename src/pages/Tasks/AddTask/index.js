@@ -28,18 +28,18 @@ const AddTask = ({ isOpen, onModalClose }) => {
 
     return (
         <Dialog open={isOpen} onClose={onModalClose} fullScreen>
-            <AppBar className="add-task-title-bar">
+            {/* <AppBar className="add-task-title-bar">
                 <Toolbar>
                     <Typography className="add-task-title" variant="h6">
                         New task
                     </Typography>
                     <IconButton edge="end" onClick={onModalClose}>
-                        <CloseIcon />
+                        <CloseIcon className="add-task-actions-element" />
                     </IconButton>
                 </Toolbar>
-            </AppBar>
+            </AppBar> */}
             <DialogContent className="add-task-content">
-                <input
+                <textarea
                     className="add-task-input"
                     placeholder="What's on your mind?"
                     value={taskDescription}
@@ -47,10 +47,10 @@ const AddTask = ({ isOpen, onModalClose }) => {
                 />
             </DialogContent>
             <DialogActions className="add-task-actions">
-                <Button color="primary" onClick={onModalClose}>
+                <Button className="add-task-actions-element" onClick={onModalClose}>
                     Cancel
                 </Button>
-                <Button color="primary" onClick={onTaskSubmit}>
+                <Button className="add-task-actions-element" onClick={onTaskSubmit}>
                     Save
                 </Button>
             </DialogActions>
