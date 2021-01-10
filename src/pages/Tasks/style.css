@@ -1,0 +1,8 @@
+.add-task {
+    background: var(--animation-font-color) !important;
+    color: var(--body-background-color) !important;
+    padding: 15px !important;
+    position: absolute !important;
+    right: 20px;
+    bottom: 78px;
+}

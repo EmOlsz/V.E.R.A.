@@ -1,0 +1,27 @@
+.add-task-title-bar {
+    background: var(--body-background-color) !important;
+    color: #666 !important;
+    position: relative !important;
+}
+
+.add-task-title {
+    flex: 1;
+}
+
+.add-task-content {
+    background: var(--body-background-color) !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+.add-task-input {
+    border: none;
+    background: none;
+    font-size: 22px;
+}
+
+.add-task-actions {
+    background: var(--body-background-color) !important;
+    padding: 10px !important;
+    box-shadow: 0px -2px 4px -1px rgba(0,0,0,0.2), 0px -4px 5px 0px rgba(0,0,0,0.14), 0px -1px 10px 0px rgba(0,0,0,0.12);
+}
