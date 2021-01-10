@@ -1,14 +1,3 @@
-.add-task-title-bar {
-    background: var(--body-background-color) !important;
-    color: #666 !important;
-    position: relative !important;
-}
-
-.add-task-title {
-    flex: 1;
-    color: var(--animation-font-color) !important;
-}
-
 .add-task-content {
     background: var(--body-background-color) !important;
     padding-top: 25px !important;
