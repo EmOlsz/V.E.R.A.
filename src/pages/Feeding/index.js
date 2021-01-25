@@ -66,7 +66,7 @@ const Feeding = () => {
             })
         }
 
-        fetch("http://localhost:8080/feeding", options)
+        fetch(`${process.env.REACT_APP_API_URL}/feeding`, options)
             .then(res => res.json())
             .then(data => console.log(data))
             .catch(error => console.error(error))
@@ -77,7 +77,7 @@ const Feeding = () => {
     }
 
     const onDailyFeedingsFetch = () => {
-        fetch(`http://localhost:8080/feeding/daily/${selectedBreastValue}`)
+        fetch(`${process.env.REACT_APP_API_URL}/feeding/daily/${selectedBreastValue}`)
             .then(res => res.json())
             .then(data => dispatch(feeding.actions.setDailyFeedingList(data)))
             .catch(error => console.error(error));

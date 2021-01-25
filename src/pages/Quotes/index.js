@@ -14,7 +14,7 @@ const Quotes = () => {
     }, []);
 
     const onQuoteFetch = () => {
-        fetch('http://localhost:8080/quotes')
+        fetch(`${process.env.REACT_APP_API_URL}/quotes`)
             .then(res => res.json())
             .then(data => dispatch(quotes.actions.setQuote(data.value)))
             .catch(error => console.error(error));
