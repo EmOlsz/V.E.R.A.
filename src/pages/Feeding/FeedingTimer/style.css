@@ -1,0 +1,29 @@
+.feeding-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vh 0;
+}
+
+.feeding-timer-clock {
+    font-size: 40px;
+}
+
+.feeding-timer-button-group {
+    margin-top: 25px;
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feeding-timer-button {
+    background: var(--animation-font-color) !important;
+    color: var(--body-background-color) !important;
+    font-size: 40px !important;
+    padding: 15px !important;
+}
+
+.feeding-timer-button-disabled {
+    background: #999 !important;
+}

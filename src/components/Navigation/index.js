@@ -6,12 +6,13 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 
 import routes from 'constants/routes';
 
-import './Navigation.css';
+import './style.css';
 
 const Navigation = () => {
-    const [route, setRoute] = useState(routes[0]);
-
     const history = useHistory();
+    const startRoute = routes.find(route => route.path === history.location.pathname);
+    
+    const [route, setRoute] = useState(startRoute);
 
     const onRouteChange = (event, newRoute) => {
         setRoute(newRoute);

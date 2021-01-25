@@ -1,0 +1,30 @@
+.feeding-navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+.feeding-navigation-icon {
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(4px 4px -1px var(--animation-font-color));
+    transition: filter .3s ease;
+}
+
+.feeding-navigation-icon-left {
+    background-image: url('assets/images/breast-left.png');
+}
+
+.feeding-navigation-icon-right {
+    background-image: url('assets/images/breast-right.png');
+}
+
+.feeding-navigation-icon-selected {
+    filter: drop-shadow(4px 4px 3px var(--animation-font-color)) !important;
+}
+
+.feeding-navigation-icon-disabled {
+    filter: blur(3px);
+}
